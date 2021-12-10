@@ -2,6 +2,7 @@ import Enzyme, { shallow } from 'enzyme'
 import Adapter from 'enzyme-adapter-react-16'
 import Edit from './edit'
 import React from 'react'
+import { create } from 'react-test-renderer'
 
 // テストのセットアップ
 global.React = React
@@ -28,4 +29,9 @@ test('input が変更されると`setAttributes`がコールされる', () => {
   const input = wrapper.find('input')
   input.simulate('change', mockEvent)
   expect(mockFn).toBeCalledWith({ text: 'こんばんは' })
+})
+
+test('スナップショットが一致する', () => {
+  const tree = create(<Edit attributes={{ text: 'こんにちは' }} />).toJSON()
+  expect(tree).toMatchSnapshot()
 })

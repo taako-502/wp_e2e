@@ -1,0 +1,28 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`スナップショットが一致する 1`] = `
+<div>
+  <span
+    className="value"
+    style="font-size:1em"
+  >
+    こんにちは
+  </span>
+  <span
+    style="font-size:.75em"
+  >
+    こんにちは
+  </span>
+  <span
+    style="font-size:.5em"
+  >
+    こんにちは
+  </span>
+  <span
+    style="font-size:.25em"
+  >
+    こんにちは
+  </span>
+  ...
+</div>
+`;

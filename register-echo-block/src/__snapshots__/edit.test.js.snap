@@ -1,0 +1,17 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`スナップショットが一致する 1`] = `
+<div>
+  <label
+    htmlFor="echo-text"
+  >
+    Echo: 
+  </label>
+  <input
+    id="echo-text"
+    onChange={[Function]}
+    type="text"
+    value="こんにちは"
+  />
+</div>
+`;
